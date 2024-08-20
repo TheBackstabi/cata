@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Cataclysm full raid simulator</title>
+		<meta charset="utf-8" />
+
+		<link rel="icon" type="image/x-icon" href="/cata/assets/favicon_io/favicon.ico" />
+
+		<meta name="description" content="full raid simulations for World of Warcraft® Cataclysm Classic." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preload" href="/cata/assets/database/db.json" as="fetch" crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+			integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<!-- Load the top-level ui/index.ts -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+			integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-T3HBB0LXNX"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-YEJ8MEHGV2');
+		</script>
+		<script type="module" crossorigin src="/cata/bundle/ui/raid/full/index.html-C4kL2eJ9.entry.js"></script>
+		<link rel="modulepreload" crossorigin href="/cata/bundle/index-CxS5KVR3.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/detailed_results-Z5A57wuR.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/preset_utils-CbrNtUMp.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/suggest_reforges_action-Bebre86h.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CtmU-mjr.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-BAZhmOx4.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-TCzZ1boN.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/inputs-Db06sjkB.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-WMWBTy2m.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/apl_utils-Doaq9SSo.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CqjxUMUG.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-Bs-wf9HE.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-D5TsSpLW.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/shared-BmED1jWs.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-evAEPfFX.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CUeXrKRb.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-woWSeQ4F.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/shared-DP_Njalt.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-C14yKN4H.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-mOBW8ajd.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-l4szuj88.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/inputs-CM3soHPr.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-BBFHfqPo.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CfCV60Gu.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-BAAnu4ks.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/inputs-BEkTHQtD.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CpAOD9gb.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-BvQWSQ66.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CuU1SnYj.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/inputs-1j6YcBDY.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-BV7Ja5CR.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-C4YGp1Q0.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-BMoAV97V.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/inputs-BkkdxZ58.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-DEmnujrb.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CMkGqPjm.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-B4yAzmLV.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/presets-Cc9otV_m.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-C8f-WmvD.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-0TK8Q4vW.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-B0Fbw6c6.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/inputs-BeFVCHmM.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-B-7TTZKQ.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-D9lEf089.chunk.js">
+		<link rel="modulepreload" crossorigin href="/cata/bundle/sim-CCJ3sbqH.chunk.js">
+		<link rel="stylesheet" crossorigin href="/cata/bundle/detailed_results-zOeijDjJ.style.css">
+		<link rel="stylesheet" crossorigin href="/cata/bundle/index-CdFYBjdh.style.css">
+	</head>
+
+	<body id="bootstrap-overrides"></body>
+	<!-- Load wowhead scripts after done loading everything else -->
+	<script>
+		const whTooltips = { colorLinks: true };
+	</script>
+	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+</html>
